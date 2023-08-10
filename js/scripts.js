@@ -26,11 +26,17 @@ let pokemonList = [
     }
 ];
 
-for (i = 0; i < pokemonList.length; i++) {
-    if (pokemonList[i].height <= 1.5) {
-        document.write(pokemonList[i].name + ' ' + '(height:' + pokemonList[i].height + ')' + ' ');
-    }
-    else {
-        document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!' + ' ');
-    }
-}
+// for (i = 0; i < pokemonList.length; i++) {
+//     if (pokemonList[i].height <= 1.5) {
+//         document.write(pokemonList[i].name + ' ' + '(height:' + pokemonList[i].height + ')' + ' ');
+//     }
+//     else {
+//         document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!' + ' ');
+//     }
+// }
+
+pokemonList.forEach (function (pokemon) {
+    document.write (pokemon.name+ ' '+ pokemon.height + ' '+ pokemon.types+ ' '
+ );
+});
+
