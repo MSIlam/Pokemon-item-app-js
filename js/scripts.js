@@ -44,7 +44,7 @@ if (typeof pokemon === 'object' &&
  }
 })();
 
-console.log("Showing All")
+document.write("Showing All")
 pokemonRepository.getAll().forEach(function(pokemon) {
  document.write(pokemon);
 });
