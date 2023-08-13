@@ -1,42 +1,109 @@
-let pokemonList = [
-    {
-        name: 'Bulbasaur',
-        height: 0.7,
-        types: ['GRASS', 'POISON']
-    },
-    {
-        name: 'Charizard',
-        height: 1.7,
-        types: ['FIRE', 'FLYING']
-    },
-    {
-        name: 'Butterfree',
-        height: 1.1,
-        types: ['BUG', 'FLYING']
-    },
-    {
-        name: 'Beedrill',
-        height: 1,
-        types: ['BUG', 'POISON']
-    },
-    {
-        name: 'Pidgeot',
-        height: 1.5,
-        types: ['FLYING', 'NORMAL']
-    }
-];
 
-// for (i = 0; i < pokemonList.length; i++) {
-//     if (pokemonList[i].height <= 1.5) {
-//         document.write(pokemonList[i].name + ' ' + '(height:' + pokemonList[i].height + ')' + ' ');
-//     }
-//     else {
-//         document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!' + ' ');
-//     }
-// }
 
-pokemonList.forEach (function (pokemon) {
-    document.write (pokemon.name+ ' '+ pokemon.height + ' '+ pokemon.types+ ' '
- );
+// let pokemonRepository = (function () {
+//     let pokemonList = [
+//         {
+//             name: 'Bulbasaur',
+//             height: 0.7,
+//             types: ['GRASS', 'POISON']
+//         },
+//         {
+//             name: 'Charizard',
+//             height: 1.7,
+//             types: ['FIRE', 'FLYING']
+//         },
+//         {
+//             name: 'Butterfree',
+//             height: 1.1,
+//             types: ['BUG', 'FLYING']
+//         },
+//         {
+//             name: 'Beedrill',
+//             height: 1,
+//             types: ['BUG', 'POISON']
+//         },
+//         {
+//             name: 'Pidgeot',
+//             height: 1.5,
+//             types: ['FLYING', 'NORMAL']
+//         }];
+
+//      function add(pokemon) {
+//          pokemonList.push(pokemon);
+//      }
+//      function getAll() {
+//          return pokemonList;
+//      }
+//      return {
+//          getAll:getAll,
+//          add:add
+//      }
+//  }) ();
+
+// pokemonRepository.getAll().forEach (function(pokemon) {
+// document.write(pokemon);
+//  });
+
+//  pokemonRepository.add({name:'pikachu', height:1.04, types:['Electric']})
+
+//  pokemonRepository.getAll().forEach (function(pokemon) {
+//     document.write(pokemon);
+//      });
+
+let pokemonRepository = (function() {
+  let pokemonList = [
+   {
+     name: 'Bulbasaur',
+     height: 0.7,
+     types: ['GRASS', 'POISON']
+   },
+   {
+     name: 'Charizard',
+     height: 1.7,
+     types: ['FIRE', 'FLYING']
+   },
+   {
+     name: 'Butterfree',
+     height: 1.1,
+     types: ['BUG', 'FLYING']
+   },
+   {
+     name: 'Beedrill',
+     height: 1,
+     types: ['BUG', 'POISON']
+   },
+   {
+     name: 'Pidgeot',
+     height: 1.5,
+     types: ['FLYING', 'NORMAL']
+   }];
+ 
+ function add(pokemon) {
+if (typeof pokemon === 'object' &&
+['name', 'height','types']) {
+  pokemonList.push(pokemon);
+} else {
+  console.log('I dont know');
+}
+}
+
+ function getAll() {
+   return pokemonList;
+ }
+ return {
+   getAll: getAll,
+   add: add
+ }
+})();
+
+console.log("Showing All")
+pokemonRepository.getAll().forEach(function(pokemon) {
+ document.write(pokemon);
 });
 
+pokemonRepository.add({name: "Othmanizard", height: 1.7, types: ["CODER"]})
+
+document.write("Show All including new one")
+pokemonRepository.getAll().forEach(function(pokemon) {
+ document.write(pokemon);
+});
