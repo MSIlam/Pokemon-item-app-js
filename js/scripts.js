@@ -46,12 +46,12 @@ if (typeof pokemon === 'object' &&
 
 document.write("Showing All")
 pokemonRepository.getAll().forEach(function(pokemon) {
- document.write(pokemon);
+ document.write('<p>'+pokemon.name+'-'+pokemon.height+ '-'+pokemon.types+'</p>');
 });
 
 pokemonRepository.add({name:'pikachu', height:1.04, types:['Electric']})
 
 document.write("Show All including new one")
 pokemonRepository.getAll().forEach(function(pokemon) {
- document.write(pokemon);
+  document.write('<p>'+pokemon.name+'-'+pokemon.height+ '-'+pokemon.types+'</p>');
 });
