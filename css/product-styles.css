@@ -1,66 +1,58 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
 
 body {
-    -webkit-box-sizing: 40%;
-            box-sizing: 40%;
+    box-sizing: 40%;
     font-family: Arial, sans-serif;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 }
 
-header {
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.index-main {
+  margin-top: 100px;
+}
+
+.list-group {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+justify-content:center;
 }
 
 li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 5px;
+}
+.list-group-item {
+  background-color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  height:200px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
-ul.pokemon-list {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
+.img-thumbnail {
+  size: 20px;
+}
+
+/* styling the created button in the javascript */
+.btn {
+    color:black;
+    background-color: lightblue;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
     border-color: lightgray;
 }
-/* styling the created button in the javascript */
-.pokemon-button {
-    background-color:rgb(248, 248, 248);
-    color:darkblue;
-    margin: 2px;
+
+.search-btn{
+  color:black;
+    margin-top: 70px;
     width: 90%;
-    padding: 20px;
+    background-color: lightblue;
+    padding: 10px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -68,77 +60,24 @@ ul.pokemon-list {
     border-width: .5px;
 }
 
-.pokemon-button:hover {
-    background-color: grey;
+.btn:hover {
+  opacity: .5;
 }
 
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* this is used to center the modal */
-  display: -ms-grid;
-  display: grid;
-  text-align: center;
-}
-
-.modal {
+ .modal {
   margin: auto;
-  /* display: inline-block; */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: inline-block;
+  box-sizing: border-box;
   background: #fff;
   padding: 15px;
   width: 50%;
   max-width: 700px;
   text-align: center;
-  /* background: lightcyan; */
+  background: lightcyan;
   position: absolute;
-  float: left;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  /* CSS for modal container - add your own desired CSS styles here */
-  display: block;
+  transform: translate(-50%, -50%);
 }
 
 @media all  and  (min-width: 0px) and (max-width: 500px){
