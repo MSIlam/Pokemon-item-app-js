@@ -1,7 +1,7 @@
 let pokemonRepository = (function () {
   let modalContainer = document.querySelector("#modal-container");
   let pokemonList = [];
-  let apiURL = "https://pokeapi.co/api/v2/pokemon/?limit=950";
+  let apiURL = "https://pokeapi.co/api/v2/pokemon/?limit=100";
 
   //  a function for adding new pokemon in the list given the conditions are met
   function add(pokemon) {
