@@ -1,96 +1,121 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
-    box-sizing: border-box;
-  }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
-    background-color: rgb(236, 241, 243);
-    box-sizing: 40%;
-    font-family: Arial, sans-serif;
-    align-content: center;
+  background-color: rgb(236, 241, 243);
+  -webkit-box-sizing: 40%;
+          box-sizing: 40%;
+  font-family: 'Nunito', sans-serif;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .index-main {
-  margin-top: 100px;
+margin-top: 100px;
 }
 
 .list-group {
+display: -ms-grid;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-justify-content:center;
+-webkit-box-pack:center;
+  -ms-flex-pack:center;
+      justify-content:center;
 }
 
 li {
-    align-items: center;
-    padding: 2px;
-    margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+  margin: 5px;
 }
 .list-group-item {
-  background-color: whitesmoke;
-  text-align: center;
-  justify-content: center;
-  width: 200px;
-  margin-top: 5px;
-  border-radius: 5px;
+background-color: whitesmoke;
+text-align: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+width: 200px;
+margin-top: 5px;
+border-radius: 5px;
 }
 
 
 
 /* styling the created button in the javascript */
 .btn {
-    color:black;
-    background-color: lightblue;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    border-color: lightgray;
+  color:black;
+  background-color: lightblue;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: lightgray;
 }
 
 .search-btn{
-  color:black;
-  /* margin-top: 30px; */
-    width: 80%;
-    background-color: lightblue;
-    /* padding: 10px; */
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    border-color: lightgray;
-    /* border-width: .5px; */
+color:black;
+/* margin-top: 30px; */
+  width: 80%;
+  background-color: lightblue;
+  /* padding: 10px; */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: lightgray;
+  /* border-width: .5px; */
 }
 
 .btn:hover {
-  opacity: .5;
+opacity: .5;
 }
 
- .modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 50%;
-  max-width: 700px;
-  text-align: center;
-  background: lightcyan;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.modal {
+margin: auto;
+display: inline-block;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+background: #fff;
+padding: 15px;
+width: 50%;
+max-width: 700px;
+text-align: center;
+background: lightcyan;
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+.modal-img2 {
+width:170px;
+height: 170px;
 }
 
 @media all  and  (min-width: 0px) and (max-width: 500px){
-    body {
-        max-width: 500px;
-        font-size: 14px
-    }
-    .modal {
-        font-size: 12px;
-    }
+  body {
+      max-width: 500px;
+      font-size: 18px
+  }
+  .modal {
+      font-size: 18px;
+      width: 100%;
+  }
 }
 
 @media all  and  (min-width: 500px) and (max-width: 700px){
-    body {
-        max-width: 700px;
-        font-size: 16px
-    }
+  body {
+      max-width: 700px;
+      font-size: 16px
+  }
 }
