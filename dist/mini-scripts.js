@@ -42,7 +42,7 @@ let pokemonRepository = (function () {
       a = $("<img class='modal-img'>");
     a.attr("src", t.imageUrl);
     let o = $("<img class= 'modal-img2'>");
-    o.attr("src", t.imageUrlBack), o.attr("width", 150);
+    o.attr("src", t.imageUrlBack);
     let l = $("<p>Height: " + t.height + "</p>"),
       r = $("<p>Weight: " + t.weight + "</p>"),
       p = $("<p>Types: " + t.types + "</p>"),
