@@ -38,15 +38,15 @@ let pokemonRepository = (function () {
     let e = $(".modal-title"),
       i = $(".modal-body");
     i.empty(), e.empty();
-    let n = $("<h1>" + t.name + "</h1>"),
+    let n = $("<h1>" + t.name.toUpperCase() + "</h1>"),
       a = $("<img class='modal-img'>");
     a.attr("src", t.imageUrl);
-    let o = $("<img class= 'modal-img'>");
-    o.attr("src", t.imageUrlBack);
-    let l = $("<p>Height:" + t.height + "</p>"),
-      r = $("<p>Weight:" + t.weight + "</p>"),
-      p = $("<p>Types:" + t.types + "</p>"),
-      s = $("<p>Abilities:" + t.abilities + "</p>");
+    let o = $("<img class= 'modal-img2'>");
+    o.attr("src", t.imageUrlBack), o.attr("width", 150);
+    let l = $("<p>Height: " + t.height + "</p>"),
+      r = $("<p>Weight: " + t.weight + "</p>"),
+      p = $("<p>Types: " + t.types + "</p>"),
+      s = $("<p>Abilities: " + t.abilities + "</p>");
     e.append(n),
       i.append(a),
       i.append(o),
@@ -59,7 +59,7 @@ let pokemonRepository = (function () {
     getAll: i,
     add: e,
     loadList: function t() {
-      return fetch("https://pokeapi.co/api/v2/pokemon/?limit=950")
+      return fetch("https://pokeapi.co/api/v2/pokemon/?limit=100")
         .then(function (t) {
           return t.json();
         })
@@ -94,7 +94,7 @@ let pokemonRepository = (function () {
         i.appendChild(n),
         r.addEventListener("click", function (t) {
           var i;
-          o((i = e)), console.log(e);
+          (i = e), o(i);
         });
     },
     showDetails: a,
