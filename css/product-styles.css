@@ -1,21 +1,12 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
 
 body {
-    -webkit-box-sizing: 40%;
-            box-sizing: 40%;
+    background-color: rgb(236, 241, 243);
+    box-sizing: 40%;
     font-family: Arial, sans-serif;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 }
 
 .index-main {
@@ -23,27 +14,20 @@ body {
 }
 
 .list-group {
-display: -ms-grid;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
--webkit-box-pack:center;
-    -ms-flex-pack:center;
-        justify-content:center;
+justify-content:center;
 }
 
 li {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 2px;
     margin: 5px;
 }
 .list-group-item {
   background-color: whitesmoke;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 200px;
   margin-top: 5px;
   border-radius: 5px;
@@ -81,8 +65,7 @@ li {
  .modal {
   margin: auto;
   display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #fff;
   padding: 15px;
   width: 50%;
@@ -92,9 +75,7 @@ li {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media all  and  (min-width: 0px) and (max-width: 500px){
