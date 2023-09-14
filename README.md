@@ -8,5 +8,5 @@
 - Bootstrap
 ### Used functionality
 - JSON, JQUERY, ESlint, Prettier, Modal, Fetch, Polyfill, AJAX, MediaQuery, Mini_CSS/JS
-# link: 
+# link: https://muhammad88it.github.io/Pokemon-item-app-js/
 
