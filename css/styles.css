@@ -87,16 +87,15 @@ li {
         max-width: 500px;
         font-size: 18px
     }
-    .list-group {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content:center;
+      .list-group-item {
+        background-color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+        width: 180px;
+        margin-top: 2px;
+        border-radius: 5px;
       }
-      li {
-        align-items: center;
-        padding: 1px;
-        margin: 2px;
-    }
+   
     .modal {
         font-size: 18px;
         width: 100%;
