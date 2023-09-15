@@ -87,6 +87,16 @@ li {
         max-width: 500px;
         font-size: 18px
     }
+    .list-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content:center;
+      }
+      li {
+        align-items: center;
+        padding: 1px;
+        margin: 2px;
+    }
     .modal {
         font-size: 18px;
         width: 100%;
