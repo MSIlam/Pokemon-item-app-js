@@ -107,22 +107,17 @@ height: 170px;
       max-width: 500px;
       font-size: 18px
   }
-  .list-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
+    .list-group-item {
+      background-color: whitesmoke;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 180px;
+      margin-top: 2px;
+      border-radius: 5px;
     }
-    li {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 1px;
-      margin: 2px;
-  }
+ 
   .modal {
       font-size: 18px;
       width: 100%;
