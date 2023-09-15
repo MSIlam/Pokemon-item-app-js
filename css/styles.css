@@ -58,7 +58,7 @@ li {
     /* border-width: .5px; */
 }
 
-.btn:hover {
+button:hover {
   opacity: .5;
 }
 
@@ -68,8 +68,8 @@ li {
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
-  width: 50%;
-  max-width: 700px;
+  width: 70%;
+  
   text-align: center;
   background: lightcyan;
   position: absolute;
@@ -82,17 +82,21 @@ li {
   height: 170px;
 }
 
-@media all  and  (min-width: 0px) and (max-width: 500px){
+@media all  and  (min-width: 0px) and (max-width: 430px){
     body {
-        max-width: 500px;
+        max-width: 430px;
         font-size: 18px
     }
+    .list-group {
+      padding: 1px;
+      justify-content:center;
+      }
       .list-group-item {
         background-color: whitesmoke;
         text-align: center;
         justify-content: center;
-        width: 180px;
-        margin-top: 2px;
+        width: 175px;
+        margin-top: 1px;
         border-radius: 5px;
       }
    
@@ -102,9 +106,13 @@ li {
     }
 }
 
-@media all  and  (min-width: 500px) and (max-width: 700px){
+@media all  and  (min-width: 430px) and (max-width: 700px){
+
     body {
         max-width: 700px;
         font-size: 16px
     }
+    .modal {
+      width: 100%;
+  }
 }
