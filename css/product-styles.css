@@ -1,12 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: rgb(236, 241, 243);
-  box-sizing: 40%;
+  -webkit-box-sizing: 40%;
+          box-sizing: 40%;
   font-family: 'Nunito', sans-serif;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .index-main {
@@ -14,20 +24,27 @@ margin-top: 100px;
 }
 
 .list-group {
+display: -ms-grid;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-justify-content:center;
+-webkit-box-pack:center;
+  -ms-flex-pack:center;
+      justify-content:center;
 }
 
 li {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2px;
   margin: 5px;
 }
 .list-group-item {
 background-color: whitesmoke;
 text-align: center;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 width: 200px;
 margin-top: 5px;
 border-radius: 5px;
@@ -65,7 +82,8 @@ opacity: .5;
 .modal {
 margin: auto;
 display: inline-block;
-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
 background: #fff;
 padding: 15px;
 width: 70%;
@@ -75,38 +93,43 @@ background: lightcyan;
 position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 }
 .modal-img2 {
 width:170px;
 height: 170px;
 }
 
-@media all  and  (min-width: 0px) and (max-width: 430px){
+@media all  and  (min-width: 0px) and (max-width: 432px){
   body {
-      max-width: 430px;
+      max-width: 432px;
       font-size: 18px
   }
   .list-group {
-    padding: 1px;
-    justify-content:center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+
     }
+
     .list-group-item {
       background-color: whitesmoke;
       text-align: center;
-      justify-content: center;
-      width: 175px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-top: 1px;
       border-radius: 5px;
     }
- 
-  .modal {
-      font-size: 18px;
-      width: 100%;
-  }
 }
 
-@media all  and  (min-width: 430px) and (max-width: 700px){
+@media all  and  (min-width: 420px) and (max-width: 700px){
 
   body {
       max-width: 700px;

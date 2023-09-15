@@ -82,31 +82,28 @@ button:hover {
   height: 170px;
 }
 
-@media all  and  (min-width: 0px) and (max-width: 430px){
+@media all  and  (min-width: 0px) and (max-width: 432px){
     body {
-        max-width: 430px;
+        max-width: 432px;
         font-size: 18px
     }
     .list-group {
-      padding: 1px;
+      display: grid;
       justify-content:center;
+        grid-template-columns: 1fr 1fr;
+
       }
+
       .list-group-item {
         background-color: whitesmoke;
         text-align: center;
         justify-content: center;
-        width: 175px;
         margin-top: 1px;
         border-radius: 5px;
       }
-   
-    .modal {
-        font-size: 18px;
-        width: 100%;
-    }
 }
 
-@media all  and  (min-width: 430px) and (max-width: 700px){
+@media all  and  (min-width: 420px) and (max-width: 700px){
 
     body {
         max-width: 700px;
