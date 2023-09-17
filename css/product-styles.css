@@ -81,16 +81,12 @@ opacity: .5;
 
 .modal {
 margin: auto;
-display: inline-block;
+display: none;
 -webkit-box-sizing: border-box;
         box-sizing: border-box;
-background: #fff;
 padding: 15px;
 width: 70%;
-
 text-align: center;
-background: lightcyan;
-position: absolute;
 left: 50%;
 top: 50%;
 -webkit-transform: translate(-50%, -50%);
