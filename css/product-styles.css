@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: rgb(236, 241, 243);
+  background-color: PeachPuff;
   -webkit-box-sizing: 40%;
           box-sizing: 40%;
   font-family: 'Nunito', sans-serif;
@@ -40,7 +40,7 @@ li {
   margin: 5px;
 }
 .list-group-item {
-background-color: whitesmoke;
+background-color: LightSteelBlue;
 text-align: center;
 -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -95,7 +95,7 @@ top: 50%;
 }
 .modal-img2 {
 width:170px;
-height: 170px;
+height: auto;
 }
 
 @media all  and  (min-width: 0px) and (max-width: 432px){

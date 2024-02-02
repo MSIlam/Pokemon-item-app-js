@@ -34,8 +34,8 @@ const pokemonRepository = (function () {
     // listitem.appendChild(imgContainer);
     listitem.appendChild(button);
 
-    // image.setAttribute("src", pokemon.imageUrl);
-    // image.setAttribute("width", 100);
+    // image.setAttribute("src", "img/pokemon_icon.png");
+    // image.setAttribute("width", 200);
 
     // imgContainer.appendChild(Image);
     pokemonUl.appendChild(listitem);
