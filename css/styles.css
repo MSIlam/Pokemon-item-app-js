@@ -3,7 +3,7 @@
   }
 
 body {
-    background-color: rgb(236, 241, 243);
+    background-color: PeachPuff;
     box-sizing: 40%;
     font-family: 'Nunito', sans-serif;
     align-content: center;
@@ -25,7 +25,7 @@ li {
     margin: 5px;
 }
 .list-group-item {
-  background-color: whitesmoke;
+  background-color: DarkSeaGreen;
   text-align: center;
   justify-content: center;
   width: 200px;

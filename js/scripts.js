@@ -20,8 +20,8 @@ const pokemonRepository = (function () {
   function addListItem(pokemon) {
     const pokemonUl = document.querySelector(".list-group");
     const listitem = document.createElement("li");
-    const imgContainer = document.createElement("div");
-    const image = document.createElement("img");
+    // const imgContainer = document.createElement("div");
+    // const image = document.createElement("img");
     const button = document.createElement("button");
 
     button.classList.add("search-btn");
@@ -31,13 +31,13 @@ const pokemonRepository = (function () {
 
     listitem.classList.add("list-group-item");
     listitem.innerText = pokemon.name.toUpperCase();
-    listitem.appendChild(imgContainer);
+    // listitem.appendChild(imgContainer);
     listitem.appendChild(button);
 
-    image.setAttribute("src", pokemon.imageUrl);
-    image.setAttribute("width", 100);
+    // image.setAttribute("src", "img/pokemon_icon.png");
+    // image.setAttribute("width", 200);
 
-    imgContainer.appendChild(Image);
+    // imgContainer.appendChild(Image);
     pokemonUl.appendChild(listitem);
 
     button.addEventListener("click", function (event) {
