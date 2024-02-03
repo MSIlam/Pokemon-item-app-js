@@ -1,6 +1,6 @@
 const pokemonRepository = (function () {
   const pokemonList = [];
-  const apiURL = "https://pokeapi.co/api/v2/pokemon/?limit=100";
+  const apiURL = "https://pokeapi.co/api/v2/pokemon/?limit=50";
 
   //  a function for adding new pokemon in the list given the conditions are met
   function add(pokemon) {
